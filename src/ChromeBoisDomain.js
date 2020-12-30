@@ -13,6 +13,7 @@ handleKeyDown = (event) => {
     resize('+')
   } else if (event.key === 's') {
     resize('-')
+<<<<<<< HEAD
   }
 }
 
@@ -28,4 +29,20 @@ render() {
     </canvas>
     )
   }
+=======
+  }
+}
+
+render() {
+  return (
+    <canvas 
+    onMouseMove={this.handleMouseMove}
+    onClick={() => {toggleCycling()}}
+    onKeyDown={this.handleKeyDown}
+    width='900'
+    height='600'
+    tabIndex="0">
+    </canvas>
+    )
+>>>>>>> 9dc2f3d69b0203c66235fafef6f9f4bfb73ff891
 }
